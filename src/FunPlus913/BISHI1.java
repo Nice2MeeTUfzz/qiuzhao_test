@@ -9,21 +9,26 @@ package FunPlus913;
 输岀
 {3,4,5,1,2}
  */
+
 import java.util.*;
 
-class ListNode{
-    int value;
-    ListNode next;
-    ListNode(){}
-    ListNode(int value) {
-        this.value = value;
-    }
-    ListNode(int value, ListNode next) {
-        this.value = value;
-        this.next = next;
-    }
+//public class ListNode {
+//    int value;
+//    ListNode next;
+//
+//    ListNode() {
+//    }
+//
+//    ListNode(int value) {
+//        this.value = value;
+//    }
+//
+//    ListNode(int value, ListNode next) {
+//        this.value = value;
+//        this.next = next;
+//    }
+//}
 
-}
 public class BISHI1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
