@@ -17,30 +17,72 @@ MEX：整数数组的MEX定义为没有出现在数组中的最小非负整数�
  */
 
 import java.util.*;
+
 public class BISHI2 {
+    // 第一次提交版本，只考虑将原数组按照升序重新排列
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int[] a = new int[n];
+//        for (int i = 0; i < n; i++) {
+//            a[i] = sc.nextInt();
+//        }
+//
+//        Arrays.sort(a);
+//
+//        int[] res = new int[n];
+//        for (int i = 0; i < n; i++) {
+//            res[i] = MEX(a, i);
+//        }
+//
+//        int sum = 0;
+//        for (int i = 0; i < n; i++) {
+//            sum += res[i];
+//        }
+//        System.out.println(sum);
+//        printArray(a);
+//    }
+    // 考虑优先将MEX从0到大排列,后面的顺序随意
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] a = new int[n];
+        HashMap<Integer,Integer> mp = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
+            int value = sc.nextInt();
+            mp.put(value,mp.getOrDefault(value,0)+1);
         }
 
-        Arrays.sort(a);
-
-        int[] res = new int[n];
-        for (int i = 0; i < n; i++) {
-            res[i] = MEX(a, i);
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i = 0; i <= n; i++) {
+            if (mp.getOrDefault(i, 0) >= 1) {
+                res.add(i);
+                mp.put(i, mp.getOrDefault(i, 0) - 1);
+            }else {
+                break;
+            }
         }
-
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += res[i];
+        for (Map.Entry<Integer,Integer> entry : mp.entrySet()) {
+            int k = entry.getKey();
+            int v = entry.getValue();
+            for (int i = 0; i < v; i++) {
+                res.add(k);
+            }
         }
-        System.out.println(sum);
-        printArray(a);
+        System.out.println(MEX(res));
+        printArray(res);
     }
 
+    private static int MEX(ArrayList<Integer> a) {
+        int mex = 0;
+        int res = 0;
+        for (int x : a) {
+            if (x == mex) {
+                mex++;
+            }
+            res += mex;
+        }
+        return res;
+    }
     public static int MEX(int[] a, int end) {
         int res = 0;
         for (int i = 0; i <= end; i++) {
@@ -49,6 +91,11 @@ public class BISHI2 {
             }
         }
         return res;
+    }
+    private static void printArray(ArrayList<Integer> a) {
+        for (int i = 0; i < a.size(); i++) {
+            System.out.print(a.get(i) + " ");
+        }
     }
     private static void printArray(int[] a) {
         for (int i = 0; i < a.length; i++) {
