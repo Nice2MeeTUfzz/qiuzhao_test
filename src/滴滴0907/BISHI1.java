@@ -1,4 +1,5 @@
 package 滴滴0907;
+import java.util.*;
 
 /**
  * 题目内容
@@ -17,9 +18,6 @@ package 滴滴0907;
  * 如果无法做到剩余电量为1，则输出一1
  * 如果可以，则输出所需花费的最小资金。
  */
-
-import java.time.OffsetDateTime;
-import java.util.*;
 
 public class BISHI1 {
     public static void main(String[] args) {
