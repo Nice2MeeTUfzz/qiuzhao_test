@@ -1,7 +1,5 @@
 package NiuKe;
 
-import sun.awt.windows.WPrinterJob;
-
 import java.util.*;
 
 public class BISHI52 {
