@@ -1,11 +1,11 @@
-package 滴滴0913;
+package 滴滴;
 
 import java.util.*;
 
 /**
  * <a href="https://codefun2000.com/p/P3663">...</a>
  */
-public class BISHI2 {
+public class 光照系统Ⅱ {
     static class TowerType {
         int r;
         int v;

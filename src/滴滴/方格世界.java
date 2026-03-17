@@ -1,5 +1,5 @@
-package 滴滴0308;
-
+package 滴滴;
+//<https://codefun2000.com/p/P4573>
 import java.util.*;
 
 public class 方格世界 {

@@ -1,4 +1,4 @@
-package 滴滴0913;
+package 滴滴;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
  * <a href="https://codefun2000.com/p/P3662">...</a>
  */
 
-public class BISHI1 {
+public class X不喜欢Y {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();

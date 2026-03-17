@@ -1,4 +1,4 @@
-package 滴滴0907;
+package 滴滴;
 
 /**
  * <a href="https://codefun2000.com/p/P3612">...</a>
@@ -7,7 +7,7 @@ package 滴滴0907;
 
 import java.util.*;
 
-public class BISHI2 {
+public class 滴答 {
     // 效率极慢，会超时
 //    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);

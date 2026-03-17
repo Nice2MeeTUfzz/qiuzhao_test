@@ -1,4 +1,4 @@
-package 滴滴0826;
+package 滴滴;
 
 /**
  * https://codefun2000.com/p/P3477
@@ -6,7 +6,7 @@ package 滴滴0826;
 
 import java.util.*;
 
-public class BISHI2 {
+public class 寻宝之旅 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
