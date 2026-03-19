@@ -1,4 +1,4 @@
-package 滴滴0927;
+package 滴滴;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ import java.util.*;
  * 改了转换进制当中的错误，原代码在余数小于10时没有进行处理，产生错误
  * 判断波浪数没有考虑长度为1和为2
  */
-public class BISHI1 {
+public class 波浪数 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();

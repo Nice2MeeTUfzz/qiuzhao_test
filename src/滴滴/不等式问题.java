@@ -1,7 +1,7 @@
-package 滴滴0308;
+package 滴滴;
 
 import java.util.Scanner;
-
+//<https://codefun2000.com/p/P4573>
 public class 不等式问题 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

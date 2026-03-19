@@ -1,4 +1,4 @@
-package 滴滴0927;
+package 滴滴;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ import java.util.*;
  * 将问题转换，当有一个节点的子节点得到消息，那么在下一个时刻，这个节点的另一个子节点也会得到消息
  * 那么最长的时间，也就是节点的子节点数最多的节点传递消息的时间，也就是选择最多的子节点数量
  */
-public class BISHI2 {
+public class 鼓舞 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();

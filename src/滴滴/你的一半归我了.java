@@ -1,11 +1,11 @@
-package 滴滴0826;
+package 滴滴;
 
 import java.util.*;
 
 /**
  * <a href="https://codefun2000.com/p/P3476">...</a>
  */
-public class BISHI1 {
+public class 你的一半归我了 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();

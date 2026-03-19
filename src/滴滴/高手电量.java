@@ -1,4 +1,4 @@
-package 滴滴0907;
+package 滴滴;
 import java.util.*;
 
 /**
@@ -19,7 +19,7 @@ import java.util.*;
  * 如果可以，则输出所需花费的最小资金。
  */
 
-public class BISHI1 {
+public class 高手电量 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
