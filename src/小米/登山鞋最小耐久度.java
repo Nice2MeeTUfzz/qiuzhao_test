@@ -1,4 +1,4 @@
-package 小米823_1;
+package 小米;
 
 import java.util.*;
 
@@ -21,7 +21,7 @@ import java.util.*;
 输出描述:
 对于每一组数据，输出一行一个整数，表示小明经过若干次操作之后可以装备的登山鞋的最低耐久度。
  */
-public class BISHI2 {
+public class 登山鞋最小耐久度 {
 
     private static boolean isPossible(int[] h, int n, int k, int x) {
         int[] temp = Arrays.copyOf(h, n);

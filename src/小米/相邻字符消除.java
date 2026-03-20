@@ -1,7 +1,7 @@
-package 小米0920;
+package 小米;
 
 import java.util.*;
-public class BISHI1 {
+public class 相邻字符消除 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();

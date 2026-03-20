@@ -1,8 +1,8 @@
-package 小米0920;
+package 小米;
 
 import java.util.*;
 
-public class BISHI3 {
+public class 栈序列可行性判定 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

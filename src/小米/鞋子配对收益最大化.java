@@ -1,8 +1,8 @@
-package 小米0906;
+package 小米;
 
 import java.util.*;
 
-public class BISHI1 {
+public class 鞋子配对收益最大化 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

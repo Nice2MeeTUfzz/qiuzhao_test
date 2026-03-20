@@ -1,4 +1,4 @@
-package 小米823_2;
+package 小米;
 
 import java.util.*;
 
@@ -17,7 +17,7 @@ Veq h_i Veq 2 Vtimes 10^9）
 对于每一组数据，输出一行一个整数，表示小明经过若干次操作之后可以装备的登山鞋的最低耐久度。
 样例输入：
  */
-public class BISHI1 {
+public class 登山鞋最小耐久度_版本二 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();

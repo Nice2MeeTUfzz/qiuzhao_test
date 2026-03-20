@@ -1,8 +1,8 @@
-package 小米0906;
+package 小米;
 
 import java.util.*;
 
-public class BISHI2 {
+public class 网格最小初始体力 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();

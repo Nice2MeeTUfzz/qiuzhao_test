@@ -1,4 +1,4 @@
-package 小米823_1;
+package 小米;
 import java.util.*;
 /*
  * 题目内容:
@@ -21,7 +21,7 @@ import java.util.*;
  * 输出描述:
  * 对于每个测试用例，在单独的一行中输出被海怪击沉的船的数量。
  */
-public class BISHI1 {
+public class 海怪击沉船只模拟 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
