@@ -1,6 +1,8 @@
 package 美团;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 // https://codefun2000.com/p/P4674
@@ -15,34 +17,38 @@ import java.util.Scanner;
 public class 风不吹雨 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int T =  sc.nextInt();
+        int T = sc.nextInt();
         while (T-- > 0) {
-            int n =  sc.nextInt();
-            int a =  sc.nextInt();
+            int n = sc.nextInt();
+            int a = sc.nextInt();
             int b = sc.nextInt();
-            int k =  sc.nextInt();
-            int[] arr = new int[n];
+            int k = sc.nextInt();
+            Long[] arr = new Long[n];
+            int totalSum = 0;
             for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
+                arr[i] = sc.nextLong();
+                totalSum += arr[i];
             }
-            Arrays.sort(arr);
-            int count = 0;
-            for(int i = n-1; i >= 0; i--){
-                if (a > 0 && b > 0) {
-                    count += (arr[i] / 2 - k);
-                    a--;
-                    b--;
-                } else if (a > 0 && b == 0) {
-                    count += (arr[i] / 2);
-                    a--;
-                } else if (a == 0 && b > 0) {
-                    count += (arr[i] - k);
-                    b--;
-                }else{
-                    count += arr[i];
+
+            Long[] _arr = new Long[n];
+            for (int i = 0; i < n; i++) {
+                _arr[i] = arr[i] - Math.floorDiv(arr[i], 2);
+            }
+
+            Arrays.sort(_arr, Collections.reverseOrder());
+            long sum_meth1 = 0;
+
+            for (int i = 0; i < Math.min(n, a); i++) {
+                if (_arr[i] > 0) {
+                    sum_meth1 += _arr[i];
                 }
             }
-            System.out.println(count);
+
+            long sum_meth2 = 0;
+            if (k > 0) {
+                sum_meth2 = (long) Math.min(b, n) * k;
+            }
+            System.out.println(totalSum - sum_meth1 - sum_meth2);
         }
     }
 }
